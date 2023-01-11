@@ -27,7 +27,6 @@ class StompClient {
     _isActive = false;
     _reconnectTimer?.cancel();
     _handler?.dispose();
-    _handler = null;
   }
 
   void _connect() async {
